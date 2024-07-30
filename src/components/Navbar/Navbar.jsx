@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
@@ -57,6 +57,11 @@ const Navbar = () => {
               isPending ? "active " : isActive ? "activepage" : ""
             } to="/">
             Solution
+          </NavLink>
+          <NavLink className={({ isActive, isPending }) =>
+              isPending ? "active " : isActive ? "activepage" : ""
+            } to="/contact-us">
+            Contact Us
           </NavLink>
           <a
             className="active"
